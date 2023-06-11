@@ -1,0 +1,502 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "sf pro display";
+}
+
+
+header {
+  width: 98%;
+  height: 50px;
+  padding-bottom: 7%;
+
+
+}
+
+.logo-header {
+  margin-right: 20px;
+    width: 3%;
+
+    align-self: center;
+
+}
+
+.search-icon {
+    width: 35%;
+    margin-right: 65px;
+
+
+
+
+}
+
+.bag-icon {
+    width: 30%;
+    margin-right: 2px;
+
+}
+
+.icons-top {
+  padding: 10px;
+margin-right: 5px;
+    display: flex;
+   
+    width: auto;
+    height: 40px;
+    margin-right: 20px;
+    justify-content: space-between;
+    ;
+
+
+}
+
+button{
+  background-color: #328EFD;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 20px;
+  border-radius: 6px; 
+  border:none;
+  box-shadow: none;
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 162px;
+  height: 30px;
+  
+  
+}
+
+button:hover{
+  background-color: #ffffff;
+  color: black;
+  font-size: 13px;
+  font-weight: 20px;
+  border-radius: 6px; 
+  border:none;
+  box-shadow: none;
+  margin-left: 40px;
+  margin-top: 5px;
+  
+}
+
+.inicio{
+  margin-bottom: 70px;
+}
+
+.card {
+  width:50% !important;
+  height: 40%;
+}
+
+.card>img{
+  width: 100%;
+}
+
+.card-title {
+  font-size: 50px;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 30px;
+  color: #ffffff;
+  flex-wrap: nowrap;
+
+
+
+
+
+}
+
+product-detail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 38px;
+  color: #328EFD;
+  text-align: left;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-left: 30px;
+  height: 30px;
+
+
+
+
+}
+
+.card-img-top {
+  width: 200%;
+  height: 200%;
+
+}
+
+.description-prize {
+  margin-left: 30px;
+  color: #ffffff;
+
+}
+
+.btn-btn-primary {
+  font-size: 30px;
+  background-color: #328EFD;
+  font-size: 30px;
+  font-weight: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+
+  margin-top: 10px;
+  margin-left: 0;
+
+  width: 580px;
+  height: 50px;
+
+
+}
+
+.delivery-method {
+  margin-left: 30px;
+  font-size: 25px;
+  color: #ffffff;
+
+}
+
+.descriptions {
+  margin-left: 30px;
+  color: #ffffff;
+  font-weight: lighter;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.link_wrapper{
+  position: relative;
+}
+
+a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-right: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #328EFD;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #328EFD;
+  transition: all .35s;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+  border-radius: 10px;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #328EFD;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 290px;
+  border: 3px solid #328EFD;
+  background: transparent;
+  color: #328EFD;
+}
+
+
+a:hover + .icon{
+  border: 3px solid #328EFD;
+  right: -25%;
+}
+.btn2:hover{
+  width: 580px;
+  border: 3px solid #328EFD;
+  background: transparent;
+  color: #328EFD;
+
+}
+
+@media  screen and (max-width: 400px) {
+  body {
+      background-color: rgb(0, 0, 0);
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-family: "sf pro display";
+  }
+  
+  
+  header {
+      width: 180%;
+      height: 50px;
+      padding-bottom: 35%;
+    
+  
+  
+  }
+  
+  .logo-header {
+      margin-right: 20px;
+        width: 5%;
+    
+        align-self: center;
+    
+    }
+    
+    #buttons-filter{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-left:-20px;
+    }
+  
+    .icons-top {
+     display: none;
+    
+    }
+  
+    .logo-header {
+   display: none;
+    
+    }
+  
+    button{
+      background-color: #328EFD;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 20px;
+      border-radius: 6px; 
+      border:none;
+      box-shadow: none;
+      margin-left: 21px;
+      margin-top: 10px;
+      width: 162px;
+      height: 68px;
+      
+      
+    }
+  
+    
+    
+  
+.card-body{
+  margin-top: -500px;
+}
+ 
+  
+  .inicio{
+      margin-bottom: 70px;
+  }
+  
+  .card {
+      width:10% !important;
+      height: 2%;
+  }
+  
+  .card>img{
+      width: 150%;
+      margin-left:30px;
+      margin-top: 70px;
+      
+      
+  }
+  
+  .card-title {
+      font-size: 50px;
+      margin-top: 50px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 30px;
+      color: #ffffff;
+      flex-wrap: nowrap;
+  
+  
+  
+  
+  
+  }
+  
+  product-detail {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
+  
+  .card-text {
+      font-size: 38px;
+      color: #328EFD;
+      text-align: left;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 500px;
+      margin-left: 30px;
+      height: 30px;
+  
+  
+  
+  
+  }
+  
+  .card-img-top {
+      width: 150%;
+      height: 50%;
+      position: absolute;
+      margin-top: 20px;;
+     
+    
+  }
+  
+  .description-prize {
+      margin-left: 30px;
+      color: #ffffff;
+      font-size: 20px;;
+  
+  }
+  
+  .btn-btn-primary {
+      font-size: 30px;
+      background-color: #328EFD;
+      font-size: 20px;
+      font-weight: 10px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: none;
+  
+      margin-top: 10px;
+      margin-left: 0;
+  
+      width: 100%;
+      height: 52px;
+  
+  
+  }
+  
+  .delivery-method {
+      margin-left: 30px;
+      font-size: 28px;
+      color: #ffffff;
+  
+  }
+  
+  .descriptions {
+      margin-left: 30px;
+      color: #ffffff;
+      font-weight: lighter;
+      font-size: 27px;
+  }
+  .btns{
+      display: flex;
+      flex-direction: row;
+
+  
+  }
+  
+    
+    .link_wrapper{
+      position: relative;
+    }
+    
+    a{
+      display: block;
+      width: 250px;
+      height: 50px;
+      margin-right: 20px;
+      line-height: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #328EFD;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 3px solid #328EFD;
+      transition: all .35s;
+      border-radius: 10px;
+      margin-left: 30px;
+    }
+    
+    .icon{
+      width: 50px;
+      height: 50px;
+      border: 3px solid transparent;
+      position: absolute;
+      transform: rotate(45deg);
+      right: 0;
+      top: 0;
+      z-index: -1;
+      transition: all .35s;
+      border-radius: 10px;
+    }
+    
+    .icon svg{
+      width: 30px;
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% - 15px);
+      transform: rotate(-45deg);
+      fill: #328EFD;
+      transition: all .35s;
+    }
+    
+    a:hover{
+      width: 290px;
+      border: 3px solid #328EFD;
+      background: transparent;
+      color: #328EFD;
+    }
+    
+    
+    a:hover + .icon{
+      border: 3px solid #328EFD;
+      right: -25%;
+    }
+    .btn2:hover{
+      width: 580px;
+      border: 3px solid #328EFD;
+      background: transparent;
+      color: #328EFD;
+  
+    }
+  
+
+
+}

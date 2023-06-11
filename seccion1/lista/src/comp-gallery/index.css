@@ -1,0 +1,14 @@
+#fotos>figure>img{
+    height: 100px;
+    width: 120px;
+    
+}
+
+    #fotos{
+margin-top: 50px;
+margin-left: 80px;
+        height: 400px;
+        width: 800px;
+        flex-direction: column;
+        flex-wrap: wrap;
+       }

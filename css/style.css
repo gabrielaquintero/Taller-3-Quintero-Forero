@@ -1,0 +1,756 @@
+body {
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Header */
+
+header {
+    width: 98%;
+    height: 200px;
+
+
+}
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #ffffff;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #ffffff;
+    color: #000000;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+#boton-carrito{
+   background-color: transparent;
+   width: 110px;
+   top: 17px;
+   left: 1340px;
+}
+
+#boton-perfil{
+    background-color: #328EFD;
+    width: 95px;
+    height: 40px;
+    top: -3px;
+   left: -70px;
+    font-size: 15px;
+ }
+
+
+.logo-header {
+    width: 6%;
+
+    align-self: center;
+
+}
+
+.search-icon {
+    width: 35%;
+    margin-right: 65px;
+
+
+
+
+}
+
+.bag-icon {
+    width: 30%;
+
+}
+
+.icons-top {
+
+    display: flex;
+    flex-direction: row;
+    width: 5%;
+    height: auto;
+    margin-right: 120px;
+    justify-content: space-between;
+    ;
+
+
+}
+
+.btn btn-primary{
+
+   background-color: aqua;
+
+
+}
+
+#contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav {
+    text-align: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: blue;
+}
+
+.cart-item div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item img{
+    width: 50px;
+    object-fit: contain;
+}
+
+
+.menu-inicial>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+
+
+}
+
+.menu-inicial>a:hover {
+    text-decoration: underline;
+}
+
+.menu-inicial {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* grid */
+
+.image-grid {
+    --gap: 44px;
+    --num-cols: 4;
+    --row-height: 400px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: 16px;
+    margin-top: 100px;
+    margin-left: 10px;
+
+}
+
+.image-grid-relative {
+    position: relative;
+}
+
+.image-grid-relative>img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+.ipad {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+
+}
+
+.mac {
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.promac {
+    color: white !important;
+    top: 28%;
+    left: 10%;
+    position: absolute;
+    font-weight: 3;
+}
+
+.pro {
+    color: white !important;
+}
+
+.shopBtn {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 55%;
+    left: 69%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.shopBtn:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 55%;
+    left: 69%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.descriptionIpad {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 40%;
+    left: 60%;
+
+}
+
+.air {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+
+}
+
+.descriptionpods {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 25%;
+    left: 13%;
+
+}
+
+.podsBtn {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.podsBtn:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.owl-carousel>div {
+    position: relative;
+}
+
+.carouselWatch {
+    margin-top: 100px
+}
+
+.btnCarousel {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 83%;
+    left: 34%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btnCarousel:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 150px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 83%;
+    left: 34%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+
+.active.center {
+    transform: scale(1) !important;
+    -webkit-filter: grayscale(0);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+
+.owl-item {
+    transform: scale(.8) !important;
+    transition: .6s ease;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*gabi*/
+
+body {
+    background-color: black !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col-6>img {
+    width: 80px;
+    height: 120px;
+}
+
+#fotos {
+    width: 1200px;
+    height: 1200px;
+    display: flex;
+
+}
+
+.row-1 {
+    width: 100px;
+    height: 100px;
+}
+
+.col-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p-3 {
+    width: 20px;
+    height: 20px;
+}
+
+.row {
+    --bs-gutter-x: 1rem !important;
+}
+
+.m-5 {
+    margin: 10px 0 0 0 !important;
+}
+
+.col-lg-4 {
+    width: 50% !important;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#descargar {
+    color: aliceblue;
+    margin-block-end: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 60px;
+}
+
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+}
+
+.w-100 {
+    width: min-content;
+    height: min-content;
+}
+
+body {
+    background-color: black;
+
+}
+
+main {
+    padding: 0 20px;
+}
+
+.foot {
+
+    display: flex;
+    flex-direction: row;
+    width: 5%;
+    height: auto;
+    margin-right: 120px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.foot img {
+    display: flex;
+    align-items: start;
+    height: 50px;
+}
+
+
+@media  screen and (max-width: 400px) {
+
+    header {
+        width: 98%;
+        height: 40px;
+    
+    
+    }
+
+    .search-icon {
+        display: none;
+    
+    
+    
+    
+    }
+
+    .icons-top {
+
+        display: none;
+       
+        ;
+    
+    
+    }
+    
+    .bag-icon {
+        display: none;
+    
+    }
+
+    .menu-inicial {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+.shopBtn {
+    color: white;
+    font-size: 10px;
+    font-weight: 50px;
+    padding: 6px 7px;
+    width: 59px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 72%;
+    left: 59%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.shopBtn:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 20px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 55%;
+    left: 69%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.podsBtn {
+    color: white;
+    font-size: 10px;
+    font-weight: 50px;
+    padding: 4px 10px;
+    width: 65px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 77%;
+    left: 9%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.podsBtn:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 50px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+nav {
+    text-align: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+
+
+
+}
+
+.menu-inicial>a {
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: none;
+
+
+}
+
+.air {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+
+}
+
+.ipad {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+
+}
+
+.descriptionIpad {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 40%;
+    left: 60%;
+
+}
+
+.descriptionpods {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 25%;
+    left: 13%;
+
+}
+
+.mac {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: transparent !important;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
+
+.promac {
+    color: white !important;
+    top: 38%;
+    left: 10%;
+    position: absolute;
+    font-weight: 3;
+    font-size: 12px;
+}
+
+.carouselWatch {
+    margin-top: 50px
+}
+
+
+
+.btnCarousel {
+    color: white;
+    font-size: 10px;
+    font-weight: 50px;
+    padding: 4px 6px;
+    width: 80px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 78%;
+    left: 20%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btnCarousel:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 80px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 83%;
+    left: 34%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.image-grid {
+    --gap: 8px;
+    --num-cols: 4;
+    --row-height: 150px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: 16px;
+    margin-top: 10px;
+    margin-left: 7px;
+
+}
+
+.col-lg-4 {
+    width: 50% !important;
+
+}
+
+#hola {
+    margin: 40px 16px 5px!important;
+}
+
+.modal-dialog{
+    width: 100% !important; 
+    height: 50%;
+    padding: 0 35px;
+
+   
+}
+
+.modal-contend{
+    width: 100%;
+}
+.modal-contend > img{
+    width: 100%;
+}
+
+.foot img {
+    display: flex;
+    align-items: start;
+    height: 30px;
+}
+}

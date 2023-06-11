@@ -1,0 +1,145 @@
+.carousel-item>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.alignBanner {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    z-index: 3;
+}
+
+.alignBanner>h2 {
+    width: 100%;
+    font-size: 97px;
+    font-weight: bold;
+    color: rgb(42, 42, 83);
+}
+
+
+.alignBanner>h4 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(38, 38, 44);
+}
+
+.btn {
+    color: white;
+    font-size: 26px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 180px;
+    background-color: #328EFD;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    z-index: 3;
+}
+
+.btn:hover{
+    color: white;
+    font-size: 26px;
+    font-weight: 50px;
+    padding: 12px 28px;
+    width: 180px;
+    background-color: #6aa9f5;
+    position: absolute;
+    top: 65%;
+    left: 19%;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    z-index: 3;
+}
+
+@media screen and (max-width: 400px) {
+
+    .carousel-item>img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .carousel-item {
+        position: relative;
+    }
+    
+    .alignBanner {
+        width: 870px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+  
+        z-index: 3;
+    }
+    
+    .alignBanner>h2 {
+        margin-left: -354px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(42, 42, 83);
+    }
+    
+    
+    .alignBanner>h4 {
+        width: 100%;
+        font-size: 8px;
+        margin-left: -363px;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(38, 38, 44);
+    }
+    
+    .btn {
+        color: white;
+        font-size: 16px;
+        font-weight: 50px;
+        padding: 4px 6px;
+        width: 123px;
+        background-color: #328EFD;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        border-radius: 6px;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        border: none;
+        z-index: 3;
+    }
+    
+    .btn:hover{
+        color: white;
+        font-size: 26px;
+        font-weight: 50px;
+        padding: 12px 28px;
+        width: 180px;
+        background-color: #6aa9f5;
+        position: absolute;
+        top: 65%;
+        left: 19%;
+        border-radius: 6px;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        border: none;
+        z-index: 3;
+    }
+
+
+
+    
+  }

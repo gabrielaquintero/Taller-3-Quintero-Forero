@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section id="inicio"><a href="../index.html"><img class="logo-header" src="../img/logoapple.png"></a>
+  <section id="buttons-filter"> 
+    
+    <button type="button">Mac</button>
+    <button type="button">Ipad</button>
+    <button type="button">Iphone</button>
+    <button type="button">AirPods</button>
+    <button type="button">Accesorios</button>
+</section>
+<div class="icons-top">
+  <img class="search-icon" src="../img/searchicon.png">
+  <img class="bag-icon" src="../img/shopbagicon.png">
+</div>
+
+
+</section> 
+
+
+
+<div id="filter-container">
+</div>
+
+    <template id="product-template">
+        <div class="product">
+          <img class="product-image" src="" alt="Product Image" />
+          <h2 class="product-name"></h2>
+          <p class="product-price"></p>
+          <h7 class="product-description"></h7>
+        </div>
+        <img src="./img/filtros.png" alt="">
+      </template>
+      
+      <div id="actual-product" class="product-list">
+        
+        <product-item style="
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          justify-content: center;
+          align-items: center;
+          
+          
+          "></product-item>
+      </div>
+
+
+      <script type="module" src="./lista.js"></script>
+      
+</body>
+</html>
