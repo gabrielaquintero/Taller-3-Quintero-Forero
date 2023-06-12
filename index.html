@@ -29,7 +29,7 @@
                 <img class="logo-header" src="./img/logoapple.png">
                 <a href="./lista/lista.html"><button class="nav-button">Products</button></a>
                 <a href="#">Stores</a>
-                <a href="./log-in/index.html">Log-in</a>
+                <a onclick="" id="log-in-button">Log-in</a>
             </div>
 
             <div class="icons-top">
@@ -37,19 +37,22 @@
      <!--  iniciar sesion -->           
 <button class="btn btn-primary" id="boton-iniciarSesion" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Log-in</button>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 550px;" >
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
-    <section>
+  <div class="offcanvas-body" >
+    <section id="log-in-screen">
         <h1>Inicia Sesion</h1>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email-input">
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="pass-input">
-        <button id="button-log-in">Iniciar Sesion </button>
+
+        <div id="login-input">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email-input">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="pass-input">
+            <button id="button-log-in" >Iniciar Sesion </button>
+        </div>
+       
         <br>
         <p>¿No tienes una cuenta? <a href="./sign-in/index.html">Creala aqui</a></p>
     </section>
@@ -256,7 +259,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script type="module" src="./log-in/log-in.js"></script>
+<script type="module" src="./log-in/index.js"></script>
 <script type="module" src="./index.js">
     
 

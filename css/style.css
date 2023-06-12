@@ -181,6 +181,39 @@ nav {
 
 /* grid */
 
+
+
+#login-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px;
+    margin: 0 20px;
+}
+
+#login-input input{
+    margin: 10px 0px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 900px;
+}
+
+#login-input button{
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #328EFD;
+    color: white;
+}
+
+#log-in-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .image-grid {
     --gap: 44px;
     --num-cols: 4;

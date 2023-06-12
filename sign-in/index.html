@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <section>
+    <section id="register-screen">
         <h1>Crea una cuenta</h1>
+
+        <div id="register-input" >
         <label for="email">Email:</label>
         <input type="text" name="email" id="email-input">
         <label for="username">username:</label>
@@ -22,7 +26,9 @@
         <input type="password" name="confirm-pass" id="confirm-pass-input">
         <label for="img">Imagen perfil:</label>
         <input type="file" id="profile-img" name="img" accept="image/png, image/jpeg">
-        <button id="button-sign-in">Crear Cuenta</button>
+        <button id="register-button">Crear Cuenta</button>
+        </div>
+        
         <br>
         <p>¿Ya tienes una cuenta? <a href="../index.html">Inicia sesion aqui</a></p>
     </section>

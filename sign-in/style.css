@@ -1,0 +1,34 @@
+*{
+    font-family: sf pro display;
+}
+
+#register-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px;
+    margin: 0 20px;
+}
+
+#register-input input{
+    margin: 10px 0px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 900px;
+}
+
+#register-input button{
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #328EFD;
+    color: white;
+}
+
+#register-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
