@@ -71,6 +71,17 @@ header {
     font-size: 15px;
  }
 
+ #boton-iniciarSesion{
+    width: 140px;
+    height: 40px;
+    top: 34px;
+    left: 1211px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+
 
 .logo-header {
     width: 6%;
