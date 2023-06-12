@@ -33,7 +33,7 @@ class ProductItem extends HTMLElement {
           this.innerHTML += `
           
           <div class="card" style="width: 18rem;">
-          <img src=${item.img} class="card-img-top" alt="...">
+          <img src=${item.urlImage} class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">${item.precio}</p>
@@ -48,6 +48,7 @@ class ProductItem extends HTMLElement {
       
   }
 
+  
   ProductsFilter(filterType) {
     let filter = [];
     this.innerHTML = ''

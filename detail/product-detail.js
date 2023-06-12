@@ -1,5 +1,12 @@
-import { addDBCart } from '../firebase.js';
+import { addDBCart, auth} from '../firebase.js';
+import { getProductos } from "../firebase.js"
 
+
+const verifyAuth = auth;
+
+const currentUser = auth.currentUser;
+
+console.log(currentUser)
 let products = [];
 let url = window.location.search;
 let param = new URLSearchParams(url);
@@ -29,19 +36,21 @@ class productDetail extends HTMLElement {
   product(product) {
     productInfo = {
       name: product.name,
-      price: product.price,
-      img: product.img
+      price: product.precio,
+      img: product.urlImage
     };
 
     this.innerHTML += `
       <link rel='stylesheet' href='./product'>
       <div class="card" style="width: 18rem;">
-        <img src=${product.img} class="card-img-top" alt="...">
+      
+        <img src=${product.urlImage} class="card-img-top" alt="...">
+        
       </div>
       <div>
         <div>
           <h5 class="card-title">${product.name}</h5>
-          <p class="card-text">${product.price}</p>
+          <p class="card-text">${product.precio}</p>
           <h5 class="description-prize">Or $45.79/mo. For 24 mo. Before Trade in.</h5>
         </div>
         <div>
@@ -64,23 +73,24 @@ class productDetail extends HTMLElement {
           <h5 class="description2">Home delivery in less than 24 hours</h5>
           <h5 class="description3">1 year warranty in all Apple devices </h5>
           <a class="btn-btn-primary" id="Shop-button">Shop Now</a>
+          sh
         </div>
         <div class="btn2"></div>
       </div>`;
 
     const shopButton = this.querySelector("#Shop-button");
     shopButton.addEventListener("click", () => {
-      addDBCart(productInfo.name, productInfo.price, productInfo.img);
+      console.log(productInfo)
+      const precio = productInfo.price? productInfo.price : 20000
+      addDBCart(productInfo.name, precio, productInfo.img)
+      alert("Producto agregado al carrito")
     });
   }
 
   async arreglo() {
-    let response = await fetch("https://apimocha.com/appleproject/allproducts");
-    let data = await response.json();
-    data.forEach((element) => {
-      products.push(element);
-    });
-
+    products=await getProductos()
+    console.log(products);
+  
     let product = products.find((item) => {
       let comparison = item.name.replaceAll(' ', '-');
       return comparison === productId;
@@ -89,6 +99,7 @@ class productDetail extends HTMLElement {
     this.product(product);
   }
 }
+
 
 customElements.define("product-detail", productDetail);
 export default productDetail;

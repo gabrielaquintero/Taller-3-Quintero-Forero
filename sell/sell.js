@@ -19,10 +19,10 @@ async function uploadProduct(e) {
     const newObj = {
         name: nameInput.value,
         descripcion: descripcionlInput.value,
-        categoria: categoryInput.value,
-        subcategoria: subcategoryInput.value,
+        category: categoryInput.value,
+        subcategor: subcategoryInput.value,
         precio: precioInput.value,
-        date: Date.now()
+        img:inputFile.value
     }
 
     const id = newObj.name.toLowerCase().replace(/ /g, '-')
@@ -31,4 +31,6 @@ async function uploadProduct(e) {
 
     // await addProduct(newObj)
     await addProductWithId(newObj, id, file)
+    alert("Producto creado")
+    
 }

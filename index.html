@@ -27,9 +27,9 @@
 
             <div class="menu-inicial">
                 <img class="logo-header" src="./img/logoapple.png">
-                <a href="./lista/lista.html"><button class="nav-button">Products</button></a>
+                <a href="./lista/lista.html">Products</a>
                 <a href="#">Stores</a>
-                <a onclick="" id="log-in-button">Log-in</a>
+                <a href="./sell/sell.html">Sell</a>
             </div>
 
             <div class="icons-top">
@@ -89,7 +89,7 @@
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Tu carrito</h5>
 
              <!--  Contenedor de items -->
-            <section class="cart-item-container">
+            <section class="cart-item-container" id="cart-item-container">
                 <div class="cart-item">
                     <img src="https://assets.stickpng.com/images/62fbbfaf342f1f906d378073.png" alt="">
                     <div>
@@ -106,8 +106,8 @@
           </div>
         </div>
     </div>
-
-
+    
+<button type="button" class="btn btn-danger" id="log-out">Log Out</button>
 
         </nav>
 
@@ -260,7 +260,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script type="module" src="./log-in/index.js"></script>
-<script type="module" src="./index.js">
+<script type="module" src="./log-out/log-out.js"></script>
+<script type="module" src="./index.js"></script>
+<script type="module" src="./firebase.js"></script>
     
 
 </script>

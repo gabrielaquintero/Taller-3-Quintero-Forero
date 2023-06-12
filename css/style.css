@@ -12,6 +12,17 @@ header {
 
 
 }
+#log-out{
+    width: 140px;
+    height: 40px;
+    top: 34px;
+    left: 1196px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ff0000;
+  }
 .icon-cart{
     width: 40px;
     height: 40px;
@@ -75,7 +86,7 @@ header {
     width: 140px;
     height: 40px;
     top: 34px;
-    left: 1211px;
+    left: 1040px;
     font-size: 20px;
     align-items: center;
     display: flex;

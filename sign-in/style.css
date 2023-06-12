@@ -2,6 +2,10 @@
     font-family: sf pro display;
 }
 
+body{
+    background-color: black;
+    color: aliceblue;
+}
 #register-input{
     display: flex;
     flex-direction: column;
@@ -31,4 +35,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+a{
+    color: aliceblue;
 }

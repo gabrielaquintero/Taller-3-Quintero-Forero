@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getDocs, getFirestore, collection, addDoc, setDoc, doc} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, setDoc, doc, getDocs, getDoc} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js";
 
@@ -20,7 +20,7 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 const storage = getStorage(app)
-const auth = getAuth(app);
+export const auth = getAuth(app);
 
 export async function handleGetProductsFromDB() {
   const querySnapshot = await getDocs(collection(db, "products"));
@@ -63,6 +63,8 @@ await setDoc(doc(db, "productos", id), {
 }
 
 
+
+
 export async function createUser(email, password, username, file) {
   try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -73,6 +75,7 @@ export async function createUser(email, password, username, file) {
 
       // Signed in
       const user = userCredential.user;
+
       // console.log("usuario creado con ->", user.uid);
 
       /// subir imagen
@@ -93,6 +96,8 @@ export async function logInUser(email, password) {
   try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password)
       const user = userCredential.user;
+      uid = user.uid;
+      console.log("This user uid: " + uid)
       return { status: true, info: user.uid };
   } catch (error) {
       const errorCode = error.code;
@@ -106,6 +111,7 @@ export async function logOut() {
 
   try {
       await signOut(auth)
+      alert("sesion cerrada")
   } catch (error) {
       console.error(error)
   };
@@ -139,6 +145,22 @@ export async function uploadFile(name, file, folder) {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////
+let uid= "";
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      uid = user.uid
+      console.log("Mi usuario esta logeado: " + uid)
+      // ...
+  } else {
+      // ...
+     console.log("usuario no  loggeadp")
+      
+  }
+});
+
 
 export async function addProductWithId(product, id, file) {
   try {
@@ -152,9 +174,31 @@ export async function addProductWithId(product, id, file) {
   }
 }
 
+export async function drawUserCart() {
+  const cartContainer = document.querySelector("#cart-item-container");
+  cartContainer.innerHTML = '';
+
+//Aqui traigo las cosas de mi carrito para pintarlos 
+  let currentCart = await getUserCart();
+  console.log(currentCart);
+
+  currentCart.forEach((obj) => {
+    const cartObj = document.createElement('div');
+    cartObj.className = "cart-item";
+    cartObj.innerHTML = `<img src="${obj.url}" alt="">
+                      <div>
+                          <h5>${obj.name}</h5>
+                          <p>${obj.precio}</p>
+                      </div>`;
+
+    cartContainer.appendChild(cartObj);
+  });
+}
+
 //Funcion para traer la informacion del usuario en la base de datos
-export async function getUserCart() { 
-   
+export async function getUserCart(uid) { 
+ 
+  console.log("My current user: " + uid)
   const docRef = doc(db, "users", uid);
   const docSnap = await getDoc(docRef);
   //console.log(docSnap); 
@@ -169,7 +213,7 @@ export async function getUserCart() {
 }
 
 
-export async function addDBCart(name, price, url) {
+export async function addDBCart(name, precio, urlImage) {
   let cart = await getUserCart();
   
   
@@ -178,13 +222,13 @@ export async function addDBCart(name, price, url) {
           const docRef = await setDoc(doc(db, "users", uid), {
               cart: [
                   ...cart,
-                  { name, price, url }
+                  { name, precio, urlImage }
               ]
           });
       } else { 
           const docRef = await setDoc(doc(db, "users", uid), {
               cart: [
-                  { name, price, url }
+                  { name, precio, urlImage }
               ]
           });
       }
